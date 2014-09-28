@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:gravity="bottom"
+    tools:context=".MainActivity" >
+    
+
+    <Button android:id="@+id/fragmentABtn" android:focusable="true" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/fragment_red_btn"  android:onClick="mainClick" android:text="Fragment A" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+	
+    <Button android:id="@+id/fragmentBBtn" android:focusable="true" android:background="@drawable/fragment_green_btn" android:onClick="mainClick" android:text="Fragment B" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/fragmentCBtn" android:focusable="true" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/fragment_blue_btn" android:onClick="mainClick" android:text="Fragment C" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+
+
+</LinearLayout>

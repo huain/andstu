@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="name">zhangsan</string>
+	
+	<string-array name="teams">
+	    <item>one</item>
+	    <item>two</item>
+	    <item>three</item>
+	</string-array>
+	
+	<color name="red">#f00</color>
+	<color name="green">#0f0</color>
+	<color name="blue">#00f</color>
+
+</resources>

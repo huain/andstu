@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button android:id="@+id/commonBtn" android:background="@drawable/png9" android:onClick="mainClick" android:text="qwertyuiopasdfghjklzxcvbnm1234567890qwertyuiopasdfghjklzxcvbnm1234567890"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/commonBtn2" android:background="@drawable/png" android:onClick="mainClick" android:text="qwertyuiopasdfghjklzxcvbnm1234567890qwertyuiopasdfghjklzxcvbnm1234567890"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/commonBtn3" android:onClick="mainClick" android:text="按钮三"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+</LinearLayout>

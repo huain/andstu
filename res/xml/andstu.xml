@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+<user level="2">
+	<name>zhangsan</name>
+	<age>18</age>
+	<sex>male</sex>
+	<school>
+	    <name>No.1 middle School</name>
+	    <level>high</level>
+	</school>
+</user>
+<user level="1">
+	<name>lisi</name>
+	<age>20</age>
+	<sex>female</sex>
+	<school>
+	    <name>Beijing University</name>
+	    <level>higher</level>
+	</school>
+</user>
+</users>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andstu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.andstu.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.andstu.vedio.VedioTestActivity" />
+        <activity android:name="com.example.andstu.db.DbActivity" />
+        <activity android:name="com.example.andstu.provider.ProviderActivity" />
+        <activity android:name="com.example.andstu.sharedpreferences.SharedPreferencesActivity" />
+        
+        
+        <activity android:name="com.example.andstu.activitylifecycle.AActivity" />
+        <activity android:name="com.example.andstu.activitylifecycle.BActivity" android:parentActivityName="com.example.andstu.activitylifecycle.AActivity" />
+        <activity android:name="com.example.andstu.activitylifecycle.CActivity" />
+        
+        <activity android:name="com.example.andstu.listview.ListViewActivity" />
+        <activity android:name="com.example.andstu.listview.ListViewSimpleActivity" />
+        <activity android:name="com.example.andstu.listview.ListViewComplexActivity" />
+        
+        <activity android:name="com.example.andstu.fragment.FragmentMainActivity" />
+        
+        <activity android:name="com.example.andstu.service.MyServiceActivity" android:launchMode="singleTop"/>
+        <service android:name="com.example.andstu.service.MyService"></service>
+        <service android:name="com.example.andstu.service.MyServiceBase"></service>
+        <service android:name="com.example.andstu.service.MyIntentService"></service>
+        <service android:name="com.example.andstu.service.MyAidlService">
+            <intent-filter>
+                <action android:name="com.example.andstu.service.MyAidlService"/>
+            </intent-filter>
+        </service>
+        
+        <activity android:name="com.example.andstu.broadcast.MyBroadcastActivity"/>
+        <receiver android:name="com.example.andstu.broadcast.MyReceiverA">
+            <intent-filter android:priority="10001">
+                <action android:name="com.example.andstu.broadcast.testbroadcast"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.andstu.broadcast.MyReceiverB">
+            <intent-filter android:priority="2">
+                <action android:name="com.example.andstu.broadcast.testbroadcast"/>
+            </intent-filter>
+        </receiver>
+        
+		<receiver android:name="com.example.andstu.broadcast.MySmsReceiver">    
+		   <intent-filter android:priority="800">    
+		       <action android:name="android.provider.Telephony.SMS_RECEIVED"/>    
+		   </intent-filter>    
+		</receiver>  
+        
+        <activity android:name="com.example.andstu.net.netmanager.NetManagerActivity"/>
+        <activity android:name="com.example.andstu.net.httpurlconn.HttpUrlConnActivity"/>
+        <activity android:name="com.example.andstu.net.httpclient.HttpClientActivity"/>
+        <activity android:name="com.example.andstu.net.socket.SocketActivity"/>
+        <activity android:name="com.example.andstu.net.webservice.WebServiceActivity"/>
+        
+        
+        
+        <activity android:name="com.example.andstu.xml.XmlActivity"/>
+        
+        <activity android:name="com.example.andstu.png9.Png9Activity"/>
+        
+         <activity android:name="com.example.andstu.file.FileActivity"/>
+        
+        <activity android:name="com.example.andstu.thread.ThreadActivity"/>
+        
+        <activity android:name="com.example.andstu.intent.MyIntentActivity"/>
+        <activity android:name="com.example.andstu.intent.MyIntentTargetActivity">
+            <intent-filter>
+                <action android:name="com.example.andstu.action"/>
+                <action android:name="com.example.andstu.action1"/>
+                <action android:name="com.example.andstu.action2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+                <data android:scheme="http" 
+                    android:host="www.baidu.com">
+                </data>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.andstu.layout.Layout"/>
+        
+        <activity
+            android:name="com.example.andstu.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        
+        <provider android:name="com.example.andstu.provider.UserProvider" android:authorities="com.example.andstu.provider.UserProvider"></provider>
+        
+    </application>
+
+</manifest>

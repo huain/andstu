@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <Button android:id="@+id/netHttpUrlConnBtn" android:onClick="mainClick" android:text="HttpUrlConnection"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/netHttpClientBtn" android:onClick="mainClick" android:text="HttpClient"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/netSocketBtn" android:onClick="mainClick" android:text="Socket"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/netWebServiceBtn" android:onClick="mainClick" android:text="WebService"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+</LinearLayout>

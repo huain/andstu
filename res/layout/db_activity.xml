@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+<!--     <Button android:id="@+id/dbGetReadableBtn" android:onClick="btnClick" android:text="取得可读数据库"  android:layout_width="match_parent" android:layout_height="wrap_content" /> -->
+	
+<!-- 	<Button android:id="@+id/dbGetWriteableBtn" android:onClick="btnClick" android:text="取得可读数据库"  android:layout_width="match_parent" android:layout_height="wrap_content" /> -->
+	    
+	<Button android:id="@+id/dbGetBtn" android:onClick="btnClick" android:text="读取数据"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+	
+	<Button android:id="@+id/dbInsertBtn" android:onClick="btnClick" android:text="插入数据"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+	
+	<Button android:id="@+id/dbDelBtn" android:onClick="btnClick" android:text="删除"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+	
+	<Button android:id="@+id/dbUpdateBtn" android:onClick="btnClick" android:text="更新"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+	
+
+</LinearLayout>

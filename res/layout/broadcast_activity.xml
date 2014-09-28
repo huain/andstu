@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button android:id="@+id/broadcastBtn" android:onClick="mainClick" android:text="发送无序广播"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/broadcastBtn2" android:onClick="mainClick" android:text="发送有序广播"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

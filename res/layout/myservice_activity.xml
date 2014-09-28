@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <TextView android:id="@+id/myserviceText" android:textSize="24sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/myserviceStartBtn" android:onClick="mainClick" android:text="启动"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/myserviceStopBtn" android:enabled="false" android:onClick="mainClick" android:text="停止"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/myserviceBaseStartBtn" android:enabled="true" android:onClick="mainClick" android:text="Base启动"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/myserviceBaseStopBtn" android:enabled="true" android:onClick="mainClick" android:text="Base停止"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/myserviceBaseBindBtn" android:enabled="true" android:onClick="mainClick" android:text="Base绑定"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/myserviceBaseUnBindBtn" android:enabled="true" android:onClick="mainClick" android:text="Base解绑"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+	<Button android:id="@+id/myintentserviceStartBtn" android:onClick="mainClick" android:text="intentServie启动"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/myintentserviceStopBtn" android:onClick="mainClick" android:text="intentServie停止"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/myaidlserviceStartBtn" android:onClick="mainClick" android:text="aidlServie绑定"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/myaidlserviceStopBtn" android:onClick="mainClick" android:text="aidlServie解绑"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+</LinearLayout>

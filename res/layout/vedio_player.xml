@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@+id/mySurfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <CheckBox android:id="@+id/audioManage" android:background="@drawable/sound_radio_box_bg" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="25.0dip" android:checked="false" android:button="@null" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/progressLayout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/showPlayTime" android:layout_width="70.0dip" android:layout_height="fill_parent" android:textIsSelectable="false" />
+        <com.example.andstu.vedio.MyProgressBar android:id="@+id/myProgressBar" android:layout_width="0.0dip" android:layout_height="10.0dip" android:max="100" android:layout_weight="1.0" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/showAllTime" android:layout_width="70.0dip" android:layout_height="fill_parent" android:textIsSelectable="false" />
+    </LinearLayout>
+</RelativeLayout>

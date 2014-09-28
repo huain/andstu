@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button android:id="@+id/listviewSimpleBtn" android:onClick="mainClick" android:text="简单的listview"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/listviewComplexBtn" android:onClick="mainClick" android:text="自定义adapter的listview"  android:layout_width="match_parent" android:layout_height="wrap_content" />
+    
+
+</LinearLayout>
